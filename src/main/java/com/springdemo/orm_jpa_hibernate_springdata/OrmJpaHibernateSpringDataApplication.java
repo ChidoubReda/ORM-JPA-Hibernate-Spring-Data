@@ -25,10 +25,18 @@ public class OrmJpaHibernateSpringDataApplication implements CommandLineRunner {
         productRepository.save(new Product(null, "Tablet", 300, 15));
         productRepository.save(new Product(null, "Smart Watch", 200, 20));
         productRepository.save(new Product(null, "Headphone", 100, 25));
+        productRepository.save(new Product(null, "Mouse", 50, 30));
         List<Product> products = productRepository.findAll();
         products.forEach(p ->{
             System.out.println(p.toString());
         });
+        Product product = productRepository.findById(Long.valueOf(1)).get();
+        System.out.println("*********************Product with id 1 *********************");
+        System.out.println(product.getId());
+        System.out.println(product.getName());
+        System.out.println(product.getPrice());
+        System.out.println(product.getQuantity());
+        System.out.println("******************************************");
     }
 
 }

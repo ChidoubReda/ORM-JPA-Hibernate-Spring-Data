@@ -10,3 +10,9 @@
 <img src="captures/img_2.png">
 <h2>Créer l'interface JPA Repository basée sur Spring data</h2>
 <img src="captures/img_3.png">
+<h2>Tester quelques opérations de gestion de produits</h2>
+<img src="captures/img_4.png">
+<h2>Migrer de H2 Database vers MySQL</h2>
+<img src="captures/img_5.png">
+<img src="captures/img_6.png">
+
